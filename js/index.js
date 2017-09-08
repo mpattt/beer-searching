@@ -7,7 +7,7 @@ getBeers()
     document.getElementById("num").innerHTML += response.length;
     let result = "";
     for (let i = 0; i < response.length; i++) {
-      result += "<div class='col-lg-4 border border-warning'><b>Name:</b>" + response[i].name+"<br>" + '<img src="' + response[i].image_url + '" width="80" height="150">' +"<br><b>Tagname:</b>" + response[i].tagline+"<br><b>First brewed:</b>"+ response[i].first_brewed+"<br><b>Yeast:</b>"+ response[i].ingredients.yeast+ "<hr></div>";
+      result += "<div class='col-lg-4 border border-warning'><b>Name:</b>" + response[i].name+"<br>" + '<img src="' + response[i].image_url + '" width="80" height="150">' +"<br><b>Tagline:</b>" + response[i].tagline+"<br><b>First brewed:</b>"+ response[i].first_brewed+"<br><b>Yeast:</b>"+ response[i].ingredients.yeast+ "<hr></div>";
     }
     document.getElementById("beers").innerHTML = result;
   })
